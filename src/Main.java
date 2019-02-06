@@ -12,7 +12,7 @@ public class Main {
 			for (int j=0; j<DESK_SIZE; j++) {
 				if (Math.floorMod(i+j,2)==0) {
 					desk[i][j] = " |_| "; 		//white
-				} else desk[i][j] = " |X| ";	//black
+				} else desk[i][j] = " |Ш| ";	//black
 			}
 		}
 		for (int i=0; i<DESK_SIZE; i++) {
