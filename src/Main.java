@@ -1,3 +1,4 @@
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,19 +12,19 @@ public class Main {
 	    	deskColumn[i] = (char)(i+65); //65 - code of 'A" char
 			for (int j=0; j<DESK_SIZE; j++) {
 				if (Math.floorMod(i+j,2)==0) {
-					desk[i][j] = " |_| "; 		//white
-				} else desk[i][j] = " |Ш| ";	//black
+					desk[i][j] ="|_|";   	//"□"
+				} else desk[i][j] ="|Ш|";	//"■"
 			}
 		}
 		for (int i=0; i<DESK_SIZE; i++) {
 			System.out.print("\n" + deskRow[(DESK_SIZE - 1) - i] + " ");
 			for (int j=0; j<DESK_SIZE; j++) {
-				System.out.print(desk[i][j]);
+				System.out.print(desk[i][j] + " ");
 			}
 		}
-		System.out.print("\n    ");
+		System.out.print("\n  ");
 		for (char item : deskColumn) {
-			System.out.print(item + "    ");
+			System.out.print(" " + item + "  ");
 		}
     }
 }
