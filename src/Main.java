@@ -11,7 +11,7 @@ public class Main {
 
 		for (int i=0; i<DESK_SIZE; i++){
 			deskRow [i] = i+1;
-	    	deskColumn[i] = (char)(i+65); //65 - code of 'A" char
+	    	deskColumn[i] = (char)(i+65); //65 - code of char 'A'
 			for (int j=0; j<DESK_SIZE; j++) {
 				if (Math.floorMod(i+j,2)==0) {
 					desk[i][j] ="|_|";   	//"□"
